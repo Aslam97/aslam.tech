@@ -10,7 +10,9 @@ body {
     margin: 0;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -803,8 +805,6 @@ svg {
     display: table-cell;
     vertical-align: middle;
     z-index: 10;
-    position: relative;
-    cursor: pointer;
 
     button {
         margin-bottom: 0
@@ -1039,6 +1039,10 @@ blockquote {
     border-width: 0;
     border-radius: 4px;
     cursor: pointer;
+    z-index: 11;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .btn--inverse {
